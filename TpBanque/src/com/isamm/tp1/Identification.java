@@ -61,17 +61,17 @@ public class Identification extends HttpServlet {
 		
 		
 		if(resultat.next()==false)	
-			//falseeee
+			//FALSE
 			getServletContext().getRequestDispatcher("/identification.html").forward(request, response); 
 		else {
-			//trueeee
+			//TRUE
 			System.out.println(num + " "+ pass);
 			session.setAttribute("nomComplet", resultat.getString("nomComplet"));
 			session.setAttribute("numeroCompte", resultat.getString("numeroCompte"));
 			
 			
 			
-			//redirection lel virement
+			//Redirection lel virement
 			getServletContext().getRequestDispatcher("/ListeVirements").forward(request, response);
 		}
 		
