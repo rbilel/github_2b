@@ -61,7 +61,7 @@ public class Identification extends HttpServlet {
 		
 		
 		if(resultat.next()==false)	
-			//falseeee
+			//FALSE
 			getServletContext().getRequestDispatcher("/identification.html").forward(request, response); 
 		else {
 			//trueeee
