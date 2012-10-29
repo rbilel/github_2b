@@ -12,6 +12,7 @@ public class Programme {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		MembreDao membreDao = new MembreDaoImp();
+		//
 		Membre membre = new Membre();
 		membre.setIdMbr(1);
 		membre.setNom("ELBEJI");
